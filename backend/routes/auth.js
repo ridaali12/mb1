@@ -246,7 +246,7 @@ router.post('/forgot-password', async (req, res) => {
 
     // 🔥 UPDATED: Use ngrok URL from environment or default
     // Set NGROK_URL in your .env file after starting ngrok
-    const baseUrl = process.env.NGROK_URL || process.env.FRONTEND_URL || 'http://172.21.245.170:3000';
+    const baseUrl = process.env.NGROK_URL || process.env.FRONTEND_URL || 'http://192.168.100.2:3000';
     const resetUrl = `${baseUrl}/reset-password?token=${resetToken}&email=${encodeURIComponent(user.email)}`;
 
     // Send email

@@ -22,14 +22,14 @@ npm install
 Update the API URL in `src/config/api.js` to match your backend server:
 
 ```javascript
-const API_BASE_URL = 'http://172.21.245.170:5000'; // Change to your backend URL
+const API_BASE_URL = 'http://192.168.100.2:5000'; // Change to your backend URL
 ```
 
 Or set it as an environment variable:
 
 ```bash
 # Create .env file
-REACT_APP_API_URL=http://172.21.245.170:5000
+REACT_APP_API_URL=http://192.168.100.2:5000
 ```
 
 ### 3. Create Admin Account
@@ -58,7 +58,7 @@ const mongoose = require('mongoose');
 const Admin = require('./models/Admin');
 require('dotenv').config();
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://172.21.245.170:27017/wildlife-app')
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://192.168.100.2:27017/wildlife-app')
   .then(async () => {
     const admin = new Admin({
       username: 'admin',
@@ -92,7 +92,7 @@ The system now requires researchers to provide a 16‑digit ORCID identifier dur
 npm start
 ```
 
-The admin panel will open at `http://172.21.245.170:3000`
+The admin panel will open at `http://192.168.100.2:3000`
 
 ## API Endpoints Used
 
@@ -127,6 +127,6 @@ If you already have an admin panel built in React/JavaScript:
 
 ## Troubleshooting
 
-- **CORS Error**: Make sure your backend has CORS enabled and allows requests from `http://172.21.245.170:3000`
+- **CORS Error**: Make sure your backend has CORS enabled and allows requests from `http://192.168.100.2:3000`
 - **API Connection Failed**: Check that your backend server is running and the API URL in `src/config/api.js` is correct
 - **Login Fails**: Ensure you've created an admin account in the database

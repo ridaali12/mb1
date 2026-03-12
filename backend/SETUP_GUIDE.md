@@ -78,13 +78,13 @@ To connect your mobile app to the backend, you need your computer's IP:
 **Windows:**
 ```bash
 ipconfig
-# Look for IPv4 Address (e.g., 172.21.245.170)
+# Look for IPv4 Address (e.g., 192.168.100.2)
 ```
 
 **Mac/Linux:**
 ```bash
 ifconfig
-# Look for inet address (e.g., 172.21.245.170)
+# Look for inet address (e.g., 192.168.100.2)
 ```
 
 ### 6. Update Mobile App Configuration
@@ -92,8 +92,8 @@ ifconfig
 In both UploadReport.js and ReportsFeed.js, update the API_URL:
 
 ```javascript
-// Replace 172.21.245.170 with YOUR computer's IP address
-const API_URL = 'http://172.21.245.170:5000';
+// Replace 192.168.100.2 with YOUR computer's IP address
+const API_URL = 'http://192.168.100.2:5000';
 ```
 
 ### 7. Test the Connection

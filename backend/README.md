@@ -21,7 +21,7 @@ SMTP_PORT=587
 SMTP_USER=your-email@gmail.com
 SMTP_PASS=your-app-password
 EMAIL_FROM=noreply@wildlifeapp.com
-FRONTEND_URL=http://172.21.245.170:3000
+FRONTEND_URL=http://192.168.100.2:3000
 ```
 
 > Researchers must now supply a **valid 16‑digit ORCID identifier** during signup. It will be checked against the ORCID checksum algorithm and later reviewed by an admin. 
@@ -106,4 +106,4 @@ This will create a default admin account:
 
 ## Connecting to Your Frontend
 
-Update your frontend code to use the backend API URL (e.g., `http://172.21.245.170:5000/api/reports`).
+Update your frontend code to use the backend API URL (e.g., `http://192.168.100.2:5000/api/reports`).

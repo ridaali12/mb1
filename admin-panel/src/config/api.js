@@ -1,6 +1,6 @@
 // API Configuration for Admin Panel
 // Update this URL to match your backend server
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://172.21.245.170:5000';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://192.168.100.2:5000';
 
 export const API_URL = API_BASE_URL;
 

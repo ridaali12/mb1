@@ -3,7 +3,7 @@ import * as Notifications from 'expo-notifications';
 import * as Device from 'expo-device';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const API_URL = 'http://172.21.245.170:5000';
+const API_URL = 'http://192.168.100.2:5000';
 
 // Notification kaise dikhegi
 Notifications.setNotificationHandler({

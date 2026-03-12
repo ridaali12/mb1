@@ -36,13 +36,13 @@ You should see:
 **Windows:**
 ```bash
 ipconfig
-# Copy the IPv4 Address (e.g., 172.21.245.170)
+# Copy the IPv4 Address (e.g., 192.168.100.2)
 ```
 
 **Mac/Linux:**
 ```bash
 ifconfig
-# Copy the inet address (e.g., 172.21.245.170)
+# Copy the inet address (e.g., 192.168.100.2)
 ```
 
 ## 5. Update Mobile App
@@ -50,10 +50,10 @@ ifconfig
 In **Wildyn-North/app/(tabs)/UploadReport.js** and **Wildyn-North/app/(tabs)/ReportsFeed.js**, find this line:
 
 ```javascript
-const API_URL = 'http://172.21.245.170:5000';
+const API_URL = 'http://192.168.100.2:5000';
 ```
 
-Replace `172.21.245.170` with your computer's IP address from step 4.
+Replace `192.168.100.2` with your computer's IP address from step 4.
 
 ## 6. Test It!
 
